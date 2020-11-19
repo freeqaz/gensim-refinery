@@ -1,0 +1,13 @@
+id: 93c97e90-8c00-4f4b-9bcc-307cc8a9ae02
+name: Handle Exception
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries: []
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

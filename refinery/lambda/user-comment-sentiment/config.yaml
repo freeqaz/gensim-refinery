@@ -1,0 +1,19 @@
+id: 0b07d809-3736-4c68-91b7-b02aa1ec56fa
+name: User Comment Sentiment
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries: []
+layers:
+  - 'arn:aws:lambda:us-west-2:361596142897:layer:textblob:1'
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+saved_block_metadata:
+  added_timestamp: 1588117908923
+  timestamp: 1588117908
+  version: 1
+  id: f49af920-a7d2-4517-9019-5544c5273152
+tooltip: false

@@ -1,0 +1,20 @@
+id: b7e547a9-af3b-4500-921f-e131c5a4043c
+name: Create Tables
+version: 1.0.0
+type: lambda
+language: python2.7
+code: ''
+memory: 768
+libraries:
+  - pynamodb
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+saved_block_metadata:
+  added_timestamp: 1585233634080
+  timestamp: 1568056480
+  version: 3
+  id: 44107f02-d4e9-4e55-b805-86e1b4971279
+tooltip: false
+saved_input_data: ''

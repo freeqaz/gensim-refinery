@@ -1,0 +1,14 @@
+id: a385ea4c-35a7-457b-b5ac-5bf6a20dc5d9
+name: Save Analysis Results
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - pynamodb
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

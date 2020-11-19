@@ -1,0 +1,20 @@
+id: dbd83ddc-d30e-4231-94a1-9d6ec951ea31
+name: User Comment Summary
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - jsonschema
+layers:
+  - 'arn:aws:lambda:us-west-2:361596142897:layer:gensim:3'
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+saved_block_metadata:
+  added_timestamp: 1588117892539
+  timestamp: 1588117892
+  version: 1
+  id: 97d8a4af-5198-47f3-a588-44426a2ac06d
+tooltip: false

@@ -1,0 +1,13 @@
+id: fcde539e-579e-4b9e-9733-26ef7fd046f8
+name: Create API Response
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries: []
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

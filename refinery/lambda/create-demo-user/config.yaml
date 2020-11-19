@@ -1,0 +1,14 @@
+id: 9a423647-bb26-4627-8e06-5f43d823c29d
+name: Create Demo User
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - pynamodb
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

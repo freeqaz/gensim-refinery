@@ -1,0 +1,14 @@
+id: 311fadb8-9f0b-4b32-8d6d-e288bb1a9e84
+name: Delete Tables
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - pynamodb
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

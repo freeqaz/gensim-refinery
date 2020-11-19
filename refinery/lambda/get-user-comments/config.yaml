@@ -1,0 +1,14 @@
+id: f9d0775b-2eb6-404f-879f-70b7649beea5
+name: Get User Comments
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - pynamodb
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

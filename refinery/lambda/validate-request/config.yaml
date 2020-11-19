@@ -1,0 +1,14 @@
+id: ab501e74-0c84-4548-b3b0-58e072affb61
+name: Validate Request
+version: 1.0.0
+type: lambda
+language: python3.6
+code: ''
+memory: 768
+libraries:
+  - jsonschema
+layers: []
+max_execution_time: 900
+environment_variables: {}
+reserved_concurrency_count: false
+tooltip: false

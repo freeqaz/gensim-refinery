@@ -1,0 +1,141 @@
+name: Gensim and Textblob Example
+project_id: f3e59d66-a482-4ea3-b366-b834eb4ad212
+workflow_relationships:
+  - version: 1.0.0
+    node: 082709af-bec9-4bb6-84b7-25e9d0568e9c
+    name: then
+    type: then
+    next: ab501e74-0c84-4548-b3b0-58e072affb61
+    expression: ''
+    id: 8b570340-a3e2-4b84-838b-79dcace56244
+  - version: 1.0.0
+    node: ab501e74-0c84-4548-b3b0-58e072affb61
+    name: then
+    type: then
+    next: dbd83ddc-d30e-4231-94a1-9d6ec951ea31
+    expression: ''
+    id: 020b5f5e-e4a0-4a57-800e-64ba13a4b6c8
+  - version: 1.0.0
+    node: ab501e74-0c84-4548-b3b0-58e072affb61
+    name: then
+    type: then
+    next: 0b07d809-3736-4c68-91b7-b02aa1ec56fa
+    expression: ''
+    id: 3192a899-d960-404c-94f9-1a9658ebd6b3
+  - version: 1.0.0
+    node: dbd83ddc-d30e-4231-94a1-9d6ec951ea31
+    name: merge
+    type: merge
+    next: a385ea4c-35a7-457b-b5ac-5bf6a20dc5d9
+    expression: ''
+    id: d2419462-a8f3-44f6-8217-5a9469fece93
+  - version: 1.0.0
+    node: 0b07d809-3736-4c68-91b7-b02aa1ec56fa
+    name: merge
+    type: merge
+    next: a385ea4c-35a7-457b-b5ac-5bf6a20dc5d9
+    expression: ''
+    id: 3e00b7f2-d701-4024-b20f-2c1798824497
+  - version: 1.0.0
+    node: ab501e74-0c84-4548-b3b0-58e072affb61
+    name: exception
+    type: exception
+    next: 93c97e90-8c00-4f4b-9bcc-307cc8a9ae02
+    expression: ''
+    id: 0abc3f27-9f7b-4529-aadd-6af091c32457
+  - version: 1.0.0
+    node: 93c97e90-8c00-4f4b-9bcc-307cc8a9ae02
+    name: then
+    type: then
+    next: 99de91ae-018f-4333-a696-9259d052d9c4
+    expression: ''
+    id: 48205320-b55b-4c10-af41-92f70fb1fb13
+  - version: 1.0.0
+    node: 39515785-d030-4c34-b4dc-f69b97dacf15
+    name: then
+    type: then
+    next: f9d0775b-2eb6-404f-879f-70b7649beea5
+    expression: ''
+    id: 08892232-454f-474c-846a-9e600951774c
+  - version: 1.0.0
+    node: f9d0775b-2eb6-404f-879f-70b7649beea5
+    name: then
+    type: then
+    next: 4dc68c18-a9b2-4083-a36f-c9b2a0970ff3
+    expression: ''
+    id: 6500caf9-5934-465b-9dd2-b6054dd40129
+  - version: 1.0.0
+    node: ab501e74-0c84-4548-b3b0-58e072affb61
+    name: then
+    type: then
+    next: fcde539e-579e-4b9e-9733-26ef7fd046f8
+    expression: ''
+    id: a0d3ee0b-4855-4918-9bee-26ee917e8b75
+  - version: 1.0.0
+    node: fcde539e-579e-4b9e-9733-26ef7fd046f8
+    name: then
+    type: then
+    next: 99de91ae-018f-4333-a696-9259d052d9c4
+    expression: ''
+    id: 94edab0e-53a8-4eeb-84a4-6c5c56d2bb77
+workflow_states:
+  - id: 99de91ae-018f-4333-a696-9259d052d9c4
+    name: API Endpoint Response Block
+    version: 1.0.0
+    type: api_gateway_response
+    code: |
+
+      def main(block_input, backpack):
+          return "Hello World!"
+    language: python3.6
+    tooltip: false
+  - id: 082709af-bec9-4bb6-84b7-25e9d0568e9c
+    name: Analyze User Comments
+    version: 1.0.0
+    type: api_endpoint
+    api_path: /api/v1/comments
+    http_method: POST
+    code: |
+
+      def main(block_input, backpack):
+          return "Hello World!"
+    language: python3.6
+    tooltip: false
+  - id: 4dc68c18-a9b2-4083-a36f-c9b2a0970ff3
+    name: API Endpoint Response Block
+    version: 1.0.0
+    type: api_gateway_response
+    code: |
+
+      def main(block_input, backpack):
+          return "Hello World!"
+    language: python3.6
+    tooltip: false
+  - id: 39515785-d030-4c34-b4dc-f69b97dacf15
+    name: Get Analyzed User Comments
+    version: 1.0.0
+    type: api_endpoint
+    api_path: /api/v1/comments
+    http_method: GET
+    code: |
+
+      def main(block_input, backpack):
+          return "Hello World!"
+    language: python3.6
+    tooltip: false
+workflow_files: []
+workflow_file_links: []
+global_handlers: {}
+version: 1
+readme: >
+  # Gensim and TextBlob Example
+
+
+  An example project for using gensim and textblob within Refinery.
+
+
+  Normally there is difficutly using gensim with lambda since the size of the
+  dependencies exceeds the 250mb limit. We created lambda layers for both gensim
+  and textblob with the minimal set of files needed to have these libraries
+  working with a lambda.
+demo_walkthrough: []
